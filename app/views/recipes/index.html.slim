@@ -2,7 +2,7 @@
 
 - @recipes.each do |recipe|
   h2.recipe-name
-    = "Recipe Name: #{recipe.name}"
+    = link_to "#{recipe.name}", recipe_path(recipe)
   h3 Ingredients
   - recipe.ingredients.each do |ingredient|
     .ingredient-name

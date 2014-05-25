@@ -1,0 +1,14 @@
+h1 = @recipe.name
+
+h3 Ingredients
+- @recipe.ingredients.each do |ingredient|
+  .ingredient
+    = ingredient.name
+
+h3 Cooking Method
+.cooking-method
+  = @recipe.method
+
+h3 Notes
+.notes
+  = @recipe.notes

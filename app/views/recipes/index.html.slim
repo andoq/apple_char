@@ -1,1 +1,10 @@
 | Home Page
+
+- @recipes.each do |recipe|
+  h2.recipe-name
+    = "Recipe Name: #{recipe.name}"
+  h3 Ingredients
+  - recipe.ingredients.each do |ingredient|
+    .ingredient-name
+      = "Ingredient Name: #{ingredient.name}"
+  br

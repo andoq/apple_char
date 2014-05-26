@@ -6,6 +6,9 @@ class RecipesController < ApplicationController
   end
 
   def show
+    if request.path != recipe_path(@recipe)
+      return redirect_to @recipe, :status => :moved_permanently
+    end
   end
 
   private

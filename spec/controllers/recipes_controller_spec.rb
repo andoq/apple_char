@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RecipesController do
+RSpec.describe RecipesController, type: :controller do
 
   describe 'index' do
 
